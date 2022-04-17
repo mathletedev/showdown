@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="og:title" content="Showdown" />
+		<meta name="og:description" content="An online dueling game" />
+		<meta name="theme-color" content="#282c34" />
+		<title>Showdown</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				overflow-y: hidden;
+			}
+
+			div {
+				position: absolute;
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			div * {
+				width: 200px;
+				height: 24px;
+				margin: 4px;
+			}
+		</style>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css"
+		/>
+		<script src="bundle.js" defer></script>
+	</head>
+	<body>
+		<div>
+			<input id="name" placeholder="name" />
+			<br />
+			<input id="room" placeholder="room" />
+			<br />
+			<button>join</button>
+		</div>
+		<canvas></canvas>
+	</body>
+</html>
